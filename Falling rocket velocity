@@ -1,0 +1,10 @@
+% MatLab code to find the falling velocity of the rocket once the parachute is deployed
+[V Veng Vmph] = function fallvelociy(W, A)
+% W=weight  in kg
+% A=area in m^2
+rho =1.229 kg/m^3  %density of air
+Cd=1.75 %typical drag coefficient for parachute
+V=sqrt((2*W)/(Cd*r*A)); %in m/s
+Veng= V*3.28084; %in ft/s
+Vmph= Veng*0.681818; %in mph
+end
